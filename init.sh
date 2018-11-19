@@ -9,7 +9,7 @@ clearRootDir(){
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		rm -rf $ROOTDIR
 	else
-		unset $ROOTDIR
+		unset ROOTDIR
 		echo "Abort"
 		exit 1
 	fi;
@@ -28,4 +28,4 @@ git clone http://45.40.196.100:10080/valley/dotfiles.git $ROOTDIR
 # run install.sh
 . $ROOTDIR/install.sh
 
-unset $ROOTDIR
+unset ROOTDIR
