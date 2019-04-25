@@ -1,1 +1,0 @@
-alias ip="curl ipinfo.io/ip"

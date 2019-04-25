@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ## base from https://zhuanlan.zhihu.com/p/50080614
 
@@ -26,10 +26,10 @@ fi
 if [ -n "$PATH" ]; then
     old_PATH=$PATH:; PATH=
     while [ -n "$old_PATH" ]; do
-        x=${old_PATH%%:*}      
+        x=${old_PATH%%:*}
         case $PATH: in
-           *:"$x":*) ;;         
-           *) PATH=$PATH:$x;;  
+           *:"$x":*) ;;
+           *) PATH=$PATH:$x;;
         esac
         old_PATH=${old_PATH#*:}
     done
@@ -37,7 +37,3 @@ if [ -n "$PATH" ]; then
     unset old_PATH x
 fi
 export PATH
-
-. $ROOTDIR/config/git.sh
-
-echo "All done.enjoy!"
