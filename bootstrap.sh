@@ -16,4 +16,4 @@ else
 fi
 
 # initialize
-source init.sh
+source ./init.sh
