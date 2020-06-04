@@ -4,7 +4,7 @@ My dotfiles
 ## usage
 1. Install:
 ```sh
-$ curl -sSL https://raw.githubusercontent.com/seaon/dotfiles/master/bootstrap.sh | sh
+$ curl -sSL https://raw.githubusercontent.com/seaon/dotfiles/master/bootstrap.sh | bash
 ```
 2. Update:
 ```sh
