@@ -15,9 +15,17 @@ mkdir -p $BIN
 cp -rf config/* $ETC/
 cp bootstrap.sh $BIN/
 
+# 添加可执行权限
+chmod +x $BIN/*
+
 # source bashrc.sh
 sed -i "\:$ETC/bashrc.sh:d" ~/.bashrc
 echo "source $ETC/bashrc.sh" >> ~/.bashrc
+source ~/.bashrc
+
+# source z.sh
+sed -i "\:$ETC/z.sh:d" ~/.bashrc
+echo "source $ETC/z.sh" >> ~/.bashrc
 source ~/.bashrc
 
 # source vimrc.vim
