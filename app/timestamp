@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 1 ];
+then
+    date -d @$1 +"%F %T"
+else
+    date +"%s"
+fi
