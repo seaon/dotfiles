@@ -38,3 +38,6 @@ set expandtab
 filetype on
 " 设置编码
 set fileencoding=utf-8
+
+" paste模式 切换
+set pastetoggle=<F9>
