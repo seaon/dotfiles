@@ -5,4 +5,5 @@ then
     date -d @$1 +"%F %T"
 else
     date +"%s"
+    date +"%F %T"
 fi
