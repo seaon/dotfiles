@@ -6,6 +6,10 @@ My dotfiles
 ```sh
 $ curl -sSL https://raw.githubusercontent.com/seaon/dotfiles/master/bootstrap.sh | bash
 ```
+or
+```sh
+$ curl -sSL  https://gitee.com/seaon/dotfiles/raw/master/bootstrap.sh | bash
+```
 2. Update:
 ```sh
 $ bootstrap.sh
