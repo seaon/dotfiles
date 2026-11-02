@@ -1,0 +1,15 @@
+# ===== 操作系统 / 编辑器产生的临时文件 =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.tmp
+
+# ===== 本项目（WorkBuddy）数据，不属于要分发的 dotfiles =====
+.workbuddy/
+
+# ===== 本地私有覆盖（按需创建、不提交） =====
+# 例：把个人身份/密钥相关变量放到 config.local.sh，再在 config.sh 末尾 source 它，
+#     这样公共仓库不含隐私，个人机器也不用手改 config.sh。
+config.local.sh
